@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Booking</title>
+        <link rel="stylesheet" href="Mystyles.css">
+        <style>
+            .form{
+                display: flex;
+                justify-content: center;
+            }
+            input[type="text"]{
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./ContactUs.html">ContactUs</a></li>
+                <li><a href="./SignIn.html">Sign In</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <center>
+            <h2><br>Ticket Booking<br></h2>
+        </center>
+        <div class="form">
+            <form action="Booked.html">
+                User Name : <input type="text" name="uname"><br><br>
+                Password : <input type="password" name="pwd"><br><br>
+                Mobile Number : <input type="tel" pattern="[0-9]{10}" title="It's ten digit number"><br><br>
+                Date of Booking : <input type="date" ><br><br>
+                Type of Place : <br><br>
+                <select name="Place">
+                    <option value="hill">Hill Stations</option>
+                    <option value="island">Islands</option>
+                    <option value="desert">Deserts</option>
+                </select><br><br>
+                Trip Plan : <input type="text" name="no of days"><br><br>
+                No of Persons : <input type="number" name="tickets" min="1" max="10" step="1" value="1"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body><br><br><br><br><br><br><br>
+    <footer>
+        <p><center>&copy; Travel Pvt.Ltd.All rights are reserved</center></p>
+    </footer>
+</html>

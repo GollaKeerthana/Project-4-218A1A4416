@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Sign In</title>
+        <style>
+            nav{
+                text-align: right;
+                font-weight: bold;;
+                padding: 10px;
+            }
+            nav ul{
+                list-style-type: none;
+            }
+            nav ul li{
+                display: inline;
+                margin-right: 20px;
+            }
+            nav ul li a{
+                color: black;
+    
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            .form-center{
+                display:flex;
+                justify-content: center;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+                /*Phone*/
+                @media  screen and (min-width:320px) {
+                    body{
+                        background-color: aqua;
+                    }
+                }
+                /*Tablet*/
+                @media screen and (min-width:620px){
+                    body{
+                        background-color: violet;
+                    }
+                }
+                /*Laptop smallscreen*/
+                @media screen and (min-width:821px) and (max-width:1000px){
+                    body{
+                        background-color: blueviolet;
+                    }
+                }
+                /*Largescreen*/
+                @media screen and (min-width:1201px){
+                    body{
+                        background-color: pink;
+                    }
+                }
+                footer{
+                    background: black;
+                    color: white;
+                    text-align: center;
+                    padding: 20px;
+                    font-weight: bold;
+                }
+                p{text-align: left;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./ContactUs.html">ContactUs</a></li>
+                <li><a href="./SignIn.html">Sign In</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="form-center">
+            <form action="./Submission.html">
+                    <center><font size="4"><b>Regiatration Form</b></font></center><br><br>
+                    First Name : <input type="text" name="fname" autofocus><br><br>
+                    Last Name : <input type="text" name="lname"><br><br>
+                    Date of Birth : <input type="date" name="bname"><br><br>
+                    Gender : <br><input type="radio" name="Male" value="M">Male<br>
+                    <input type="radio" name="Female" value="F">Female<br><br>
+                    Email : <input type="email"><br><br>
+                    Phone Number : <input type="tel" pattern="[0-9]{10}" title="It's a ten digit number"><br><br>
+                    Languages Known : <br><br>
+                    <input type="checkbox" value="Eng">English<br><br>
+                    <input type="checkbox" value="Tel">Telugu<br><br>
+                    <input type="checkbox" value="Hin">Hindi<br><br>
+                    Address : <br><br>
+                    <textarea name="address" cols="25" rows="3">Enter Address</textarea><br><br>
+                    <input type="submit">
+            </form>
+        </div>
+        <br><br><br><br>
+    </body>
+    <footer>
+        <p><center>&copy; Travel Pvt.Ltd.All rights are reserved</center></p>
+    </footer>
+</html>
